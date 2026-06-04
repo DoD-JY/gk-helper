@@ -516,7 +516,7 @@ export default function App() {
         <div className="sticky top-0 bg-white border-b border-gray-100 z-10 no-print">
           <div className="max-w-lg mx-auto px-4 py-3">
             <div className="flex items-center">
-              {progressLabels.slice(0, totalSteps + 1).map((label, i) => {
+              {progressLabels.slice(0, totalSteps + 1).map((_label, i) => {
                 if (i === 0) return null; // 跳过"开始"
                 const isActive = step === i;
                 const isDone = step > i;
